@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy on Stomach</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+                    <a class="main-logo" href="index.html">
+                        <img class="logo" src="images/logo.png" alt="QuickSnacks Logo"/>
+                        <img class="font" src="images/font-logo.png" alt="QuickSnacks Text"/>
+                    </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categories <i class="fas fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="healthy-snacks.html"><i class="fas fa-heart"></i> Healthy Snacks</a></li>
+                        <li><a href="snacks-for-kids.html"><i class="fa-solid fa-cookie-bite"></i>Snacks for Kids</a></li>
+                        <li><a href="easy-on-stomach.html"><i class="fas fa-leaf"></i> Easy on Stomach</a></li>
+                        <li><a href="smoothies.html"><i class="fas fa-blender"></i> Smoothies</a></li>
+                        <li><a href="categories.html"><i class="fas fa-th-list"></i> View All</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search recipes...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="categories-header">
+            <h1>Easy on Stomach Recipes</h1>
+            <p>Discover gentle recipes that are easy to digest and soothing for your stomach</p>
+        </section>
+
+        <section class="recipe-grid">
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="https://images.unsplash.com/photo-1583778176476-4a8b02a64c01?w=800&auto=format&fit=crop" alt="Banana Oatmeal">
+                    <span class="recipe-category">Easy to Digest</span>
+                </div>
+                <div class="recipe-content">
+                    <h3>Banana Oatmeal</h3>
+                    <p>A warm, comforting bowl of oatmeal with ripe bananas - perfect for sensitive stomachs.</p>
+                    <div class="recipe-stats">
+                        <span><i class="far fa-clock"></i> 10 mins</span>
+                        <span><i class="fas fa-utensils"></i> 1 serving</span>
+                        <span><i class="fas fa-fire"></i> 310 cal</span>
+                    </div>
+                    <button class="view-recipe" data-recipe="banana-oatmeal">View Recipe</button>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=800&auto=format&fit=crop" alt="Rice and Steamed Vegetables">
+                    <span class="recipe-category">Light Meal</span>
+                </div>
+                <div class="recipe-content">
+                    <h3>Rice and Steamed Vegetables</h3>
+                    <p>Light and easily digestible steamed vegetables with white rice.</p>
+                    <div class="recipe-stats">
+                        <span><i class="far fa-clock"></i> 20 mins</span>
+                        <span><i class="fas fa-utensils"></i> 2 servings</span>
+                        <span><i class="fas fa-fire"></i> 220 cal</span>
+                    </div>
+                    <button class="view-recipe" data-recipe="rice-vegetables">View Recipe</button>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=800&auto=format&fit=crop" alt="Homemade Applesauce">
+                    <span class="recipe-category">Snack</span>
+                </div>
+                <div class="recipe-content">
+                    <h3>Homemade Applesauce</h3>
+                    <p>Smooth and gentle homemade applesauce, perfect for settling an upset stomach.</p>
+                    <div class="recipe-stats">
+                        <span><i class="far fa-clock"></i> 25 mins</span>
+                        <span><i class="fas fa-utensils"></i> 4 servings</span>
+                        <span><i class="fas fa-fire"></i> 95 cal</span>
+                    </div>
+                    <button class="view-recipe" data-recipe="applesauce">View Recipe</button>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800&auto=format&fit=crop" alt="Simple Avocado Toast">
+                    <span class="recipe-category">Light Meal</span>
+                </div>
+                <div class="recipe-content">
+                    <h3>Simple Avocado Toast</h3>
+                    <p>Light and nutritious avocado toast that's gentle on the digestive system.</p>
+                    <div class="recipe-stats">
+                        <span><i class="far fa-clock"></i> 5 mins</span>
+                        <span><i class="fas fa-utensils"></i> 1 serving</span>
+                        <span><i class="fas fa-fire"></i> 290 cal</span>
+                    </div>
+                    <button class="view-recipe" data-recipe="avocado-toast">View Recipe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Modals -->
+        <div id="banana-oatmeal-details" class="recipe-details">
+            <div class="recipe-modal">
+                <span class="close-modal">&times;</span>
+                <div class="recipe-modal-header">
+                    <div class="recipe-modal-image">
+                        <img src="https://images.unsplash.com/photo-1583778176476-4a8b02a64c01?w=800&auto=format&fit=crop" alt="Banana Oatmeal">
+                    </div>
+                    <div class="recipe-modal-content">
+                        <h2>Banana Oatmeal</h2>
+                        <div class="recipe-info-box">
+                            <div><i class="far fa-clock"></i> Prep Time: 10 minutes</div>
+                            <div><i class="fas fa-fire"></i> Calories: 310 kcal</div>
+                            <div><i class="fas fa-utensils"></i> Servings: 1</div>
+                            <div><i class="fas fa-leaf"></i> Category: Easy to Digest</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-sections">
+                    <div class="ingredients-section">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>1 cup rolled oats</li>
+                            <li>1 ripe banana, mashed</li>
+                            <li>2 cups water</li>
+                            <li>Pinch of salt</li>
+                            <li>Honey (optional)</li>
+                        </ul>
+                    </div>
+                    <div class="instructions-section">
+                        <h3>Instructions</h3>
+                        <ol>
+                            <li>In a pot, bring water to a boil.</li>
+                            <li>Add rolled oats and reduce heat to medium-low.</li>
+                            <li>Cook for 5 minutes, stirring occasionally.</li>
+                            <li>Mash the banana and add it to the oatmeal.</li>
+                            <li>Cook for another 2-3 minutes until desired consistency.</li>
+                            <li>Add a pinch of salt and honey if desired.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="nutrition-info">
+                    <div class="nutrition-item">
+                        <span class="value">310</span>
+                        <span class="label">Calories</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">8g</span>
+                        <span class="label">Protein</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">62g</span>
+                        <span class="label">Carbs</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">8g</span>
+                        <span class="label">Fiber</span>
+                    </div>
+                </div>
+
+                <div class="recipe-rating">
+                    <h3>Rate this Recipe</h3>
+                    <div class="emoji-rating">
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="1">😞</span>
+                            <span class="emoji-label">Not Good</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="2">😐</span>
+                            <span class="emoji-label">Okay</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="3">😊</span>
+                            <span class="emoji-label">Good</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="4">😋</span>
+                            <span class="emoji-label">Delicious!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+
+        <div id="rice-vegetables-details" class="recipe-details">
+            <div class="recipe-modal">
+                <span class="close-modal">&times;</span>
+                <div class="recipe-modal-header">
+                    <div class="recipe-modal-image">
+                        <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=800&auto=format&fit=crop" alt="Rice and Steamed Vegetables">
+                    </div>
+                    <div class="recipe-modal-content">
+                        <h2>Rice and Steamed Vegetables</h2>
+                        <div class="recipe-info-box">
+                            <div><i class="far fa-clock"></i> Prep Time: 20 minutes</div>
+                            <div><i class="fas fa-fire"></i> Calories: 220 kcal</div>
+                            <div><i class="fas fa-utensils"></i> Servings: 2</div>
+                            <div><i class="fas fa-leaf"></i> Category: Light Meal</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-sections">
+                    <div class="ingredients-section">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>1 cup white rice</li>
+                            <li>2 carrots, sliced</li>
+                            <li>1 cup broccoli florets</li>
+                            <li>1 zucchini, sliced</li>
+                            <li>Salt to taste</li>
+                        </ul>
+                    </div>
+                    <div class="instructions-section">
+                        <h3>Instructions</h3>
+                        <ol>
+                            <li>Rinse rice until water runs clear.</li>
+                            <li>Cook rice with 2 cups of water.</li>
+                            <li>While rice cooks, prepare vegetables.</li>
+                            <li>Steam vegetables for 8-10 minutes until tender-crisp.</li>
+                            <li>Season with a small amount of salt.</li>
+                            <li>Serve vegetables over rice.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="nutrition-info">
+                    <div class="nutrition-item">
+                        <span class="value">220</span>
+                        <span class="label">Calories</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">5g</span>
+                        <span class="label">Protein</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">45g</span>
+                        <span class="label">Carbs</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">4g</span>
+                        <span class="label">Fiber</span>
+                    </div>
+                </div>
+
+                <div class="recipe-rating">
+                    <h3>Rate this Recipe</h3>
+                    <div class="emoji-rating">
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="1">😞</span>
+                            <span class="emoji-label">Not Good</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="2">😐</span>
+                            <span class="emoji-label">Okay</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="3">😊</span>
+                            <span class="emoji-label">Good</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="4">😋</span>
+                            <span class="emoji-label">Delicious!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+
+        <div id="applesauce-details" class="recipe-details">
+            <div class="recipe-modal">
+                <span class="close-modal">&times;</span>
+                <div class="recipe-modal-header">
+                    <div class="recipe-modal-image">
+                        <img src="https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?w=800&auto=format&fit=crop" alt="Homemade Applesauce">
+                    </div>
+                    <div class="recipe-modal-content">
+                        <h2>Homemade Applesauce</h2>
+                        <div class="recipe-info-box">
+                            <div><i class="far fa-clock"></i> Prep Time: 25 minutes</div>
+                            <div><i class="fas fa-fire"></i> Calories: 95 kcal</div>
+                            <div><i class="fas fa-utensils"></i> Servings: 4</div>
+                            <div><i class="fas fa-leaf"></i> Category: Snack</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-sections">
+                    <div class="ingredients-section">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>4 apples, peeled and chopped</li>
+                            <li>1/4 cup water</li>
+                            <li>1 tsp cinnamon (optional)</li>
+                            <li>1 tbsp honey (optional)</li>
+                        </ul>
+                    </div>
+                    <div class="instructions-section">
+                        <h3>Instructions</h3>
+                        <ol>
+                            <li>Peel and chop apples into chunks.</li>
+                            <li>Place apples and water in a pot.</li>
+                            <li>Bring to a boil, then reduce heat.</li>
+                            <li>Simmer for 15-20 minutes until soft.</li>
+                            <li>Mash or blend to desired consistency.</li>
+                            <li>Add cinnamon and honey if desired.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="nutrition-info">
+                    <div class="nutrition-item">
+                        <span class="value">95</span>
+                        <span class="label">Calories</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">0.5g</span>
+                        <span class="label">Protein</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">25g</span>
+                        <span class="label">Carbs</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">4g</span>
+                        <span class="label">Fiber</span>
+                    </div>
+                </div>
+
+                <div class="recipe-rating">
+                    <h3>Rate this Recipe</h3>
+                    <div class="emoji-rating">
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="1">😞</span>
+                            <span class="emoji-label">Not Good</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="2">😐</span>
+                            <span class="emoji-label">Okay</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="3">😊</span>
+                            <span class="emoji-label">Good</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="4">😋</span>
+                            <span class="emoji-label">Delicious!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+
+        <div id="avocado-toast-details" class="recipe-details">
+            <div class="recipe-modal">
+                <span class="close-modal">&times;</span>
+                <div class="recipe-modal-header">
+                    <div class="recipe-modal-image">
+                        <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800&auto=format&fit=crop" alt="Simple Avocado Toast">
+                    </div>
+                    <div class="recipe-modal-content">
+                        <h2>Simple Avocado Toast</h2>
+                        <div class="recipe-info-box">
+                            <div><i class="far fa-clock"></i> Prep Time: 5 minutes</div>
+                            <div><i class="fas fa-fire"></i> Calories: 290 kcal</div>
+                            <div><i class="fas fa-utensils"></i> Servings: 1</div>
+                            <div><i class="fas fa-leaf"></i> Category: Light Meal</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-sections">
+                    <div class="ingredients-section">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>2 slices whole grain bread</li>
+                            <li>1 ripe avocado</li>
+                            <li>Salt to taste</li>
+                            <li>Lemon juice (optional)</li>
+                        </ul>
+                    </div>
+                    <div class="instructions-section">
+                        <h3>Instructions</h3>
+                        <ol>
+                            <li>Toast the bread slices.</li>
+                            <li>Cut avocado in half and remove pit.</li>
+                            <li>Mash avocado in a bowl.</li>
+                            <li>Spread mashed avocado on toast.</li>
+                            <li>Add a pinch of salt.</li>
+                            <li>Squeeze lemon juice if desired.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="nutrition-info">
+                    <div class="nutrition-item">
+                        <span class="value">290</span>
+                        <span class="label">Calories</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">8g</span>
+                        <span class="label">Protein</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">33g</span>
+                        <span class="label">Carbs</span>
+                    </div>
+                    <div class="nutrition-item">
+                        <span class="value">12g</span>
+                        <span class="label">Fiber</span>
+                    </div>
+                </div>
+                <div class="recipe-rating">
+                    <h3>Rate this Recipe</h3>
+                    <div class="emoji-rating">
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="1">😞</span>
+                            <span class="emoji-label">Not Good</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="2">😐</span>
+                            <span class="emoji-label">Okay</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="3">😊</span>
+                            <span class="emoji-label">Good</span>
+                        </div>
+                        <div class="rating-wrapper">
+                            <span class="emoji-option" data-rating="4">😋</span>
+                            <span class="emoji-label">Delicious!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+
+    
+    </main>
+
+ <!-- Footer! -->
+ <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@quicksnacks.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Healthy Street, Foodville, FC 12345</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get healthy recipes and tips delivered to your inbox weekly!</p>
+            <form class="subscribe-form" id="subscribe-form">
+                <div class="input-group">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-btn">
+                        <i class="fas fa-paper-plane"></i> Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Quick Snacks. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/click.js"></script>
+<script src="js/recipes.js"></script>
+>
+</body>
+</html>
